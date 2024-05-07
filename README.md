@@ -1,0 +1,2 @@
+# traveling_salesman_roblem_solver_sing_simulated_annealing
+ This project aims to solve the Traveling Salesman Problem (TSP) using Simulated Annealing, an optimization algorithm inspired by the annealing process in metallurgy. The TSP involves finding the shortest possible route that visits each city exactly once and returns to the origin city. Simulated Annealing is used to explore and optimize the solution space efficiently.
