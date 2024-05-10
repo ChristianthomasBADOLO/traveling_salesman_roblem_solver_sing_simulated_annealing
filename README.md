@@ -4,8 +4,7 @@
 
 ## The process
 
-1. Generating Town Configurations: Generating random town configurations, including square![square](results/image.png), gaussian![Gaussian](results/image-1.png), circle![Circle](results/image-2.png), and infinite![infinite](results/image-3.png) configurations. Each configuration provides a different layout of towns, contributing to a diverse exploration of the solution space. 
-
+1. Generating Town Configurations: Generating random town configurations, including square![square](results/image.png), gaussian![Gaussian](results/image-1.png), circle![Circle](results/image-2.png), and infinite![infinite](results/image-3.png) configurations. Each configuration provides a different layout of towns, contributing to a diverse exploration of the solution space.
 
 2. Algorithm Development: After generating these configurations, I developed the Simulated Annealing algorithm. This algorithm is designed to optimize the route for the Traveling Salesman Problem by iteratively exploring and adjusting the route based on temperature functions and acceptance probabilities."
 
@@ -21,7 +20,7 @@ where $Z_T$ is the normalization constant often called the partition function. A
 
 $$
   Q_n(x, y) = \begin{cases} 
-    P(x, y) \exp \Bigl( - \frac{(H(y) - H(x))_+}{T_n} \Bigr) 
+    P(x, y) \exp \Bigl( - \frac{(H(y) - H(x))_+}{T_n} \Bigr)
     & \text{if $x \neq y$} \\
     1 - \sum_{z \neq x} Q_n(x, z) & \text{if $x = y$}.
   \end{cases}
@@ -39,7 +38,7 @@ Thus, $E = \mathcal{S}_N$ is the set of permutations of $\{1,\dots,N\}$, and $H$
 
 $$
   \forall x \in E, \quad H(x) 
-  = \sum_{i=1}^{N-1} d \bigl(V_{x_i}, V_{x_{i+1}} \bigr) 
+  = \sum_{i=1}^{N-1} d \bigl(V_{x_i}, V_{x_{i+1}} \bigr)
   + d \bigl(V_{x_N}, V_{x_{1}} \bigr)
 $$
 
@@ -47,7 +46,7 @@ For your information, there are $\operatorname{Card}\big(H(E)\big) = \frac{N !}{
 
 ## Results
 
-### The cost evolution over iterations and the optimal path on a map, with cities connected in the order of the optimal sequence.
+### The cost evolution over iterations and the optimal path on a map, with cities connected in the order of the optimal sequence
 
 ![alt text](results/image-4.png)
 ![alt text](results/image-5.png)
